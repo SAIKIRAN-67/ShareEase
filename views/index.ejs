@@ -102,12 +102,6 @@
 <body>
   <center>
     <div class="container">
-      <% if (locals.fileLink != null) { %>
-        <div class="file-ready">
-          Your file is ready at
-          <a href="<%= locals.fileLink %>"><%= locals.fileLink %></a>
-        </div>
-      <% } %>
       <div class="typing">
         <h2 class="text-uppercase">Welcome to ShareEase</h2>
       </div>
@@ -122,6 +116,12 @@
         <input type="password" id="password" name="password" />
         <button type="submit">Share</button>
       </form>
+      <% if (locals.fileLink != null) { %>
+        <div class="file-ready">
+          Your file is ready at
+          <a href="<%= locals.fileLink %>"><%= locals.fileLink %></a>
+        </div>
+      <% } %>
     </div>
   </center>
 </body>
